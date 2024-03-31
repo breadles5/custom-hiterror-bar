@@ -1,0 +1,6 @@
+Usecase: Ingame Overlay
+Name: custom hiterror bar
+Author: breadles
+CompatibleWith: Tosu
+Resolution:  350 x 100
+authorLinks:  https://github.com/breadles5
