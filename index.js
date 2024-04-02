@@ -87,15 +87,15 @@ socket.api_v2((data) => {
             }
             arrow.style.transform = "translateX(0)";
         }
+        if (cache.acc !== data.play.accuracy) {
+            cache.acc = data.play.accuracy;
+        }
         if (cache.ur !== data.play.unstableRate) {
             cache.ur = data.play.unstableRate;
             tempAvg = 0;
-        }
-
-        if (cache.acc !== data.play.accuracy) {
-            cache.acc = data.play.accuracy;
             document.getElementById("info").innerHTML = (cache.ur/10).toFixed(2) + "ms - " + cache.acc.toFixed(2) + "%";
         }
+
     } catch (err) {
         console.log(err);
     };
